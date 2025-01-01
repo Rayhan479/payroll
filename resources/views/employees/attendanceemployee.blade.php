@@ -26,7 +26,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Daftar Hadir <small class="text-muted">11 Mar 2019</small></h5>
                             <div class="punch-det">
-                                <h6>Punch In di</h6>
+                                <h6>Jam Masuk</h6>
                                 <p>Wed, 11th Mar 2019 10.00 AM</p>
                             </div>
                             <div class="punch-info">
@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                             <div class="punch-btn-section">
-                                <button type="button" class="btn btn-primary punch-btn">Pukulan Keluar</button>
+                                <button type="button" class="btn btn-primary punch-btn">Jam Keluar</button>
                             </div>
                             <div class="statistics">
                                 <div class="row">
@@ -101,42 +101,42 @@
                             <h5 class="card-title">Aktivitas Hari Ini</h5>
                             <ul class="res-activity-list">
                                 <li>
-                                    <p class="mb-0">Masuk di</p>
+                                    <p class="mb-0">Jam Masuk </p>
                                     <p class="res-activity-time">
                                         <i class="fa fa-clock-o"></i>
                                         10.00 AM.
                                     </p>
                                 </li>
                                 <li>
-                                    <p class="mb-0">Pukul Keluar di</p>
+                                    <p class="mb-0">Jam Keluar </p>
                                     <p class="res-activity-time">
                                         <i class="fa fa-clock-o"></i>
                                         11.00 AM.
                                     </p>
                                 </li>
                                 <li>
-                                    <p class="mb-0">Pukulan Masuk di</p>
+                                    <p class="mb-0">Jam Masuk </p>
                                     <p class="res-activity-time">
                                         <i class="fa fa-clock-o"></i>
                                         11.15 AM.
                                     </p>
                                 </li>
                                 <li>
-                                    <p class="mb-0">Pukulan Keluar di</p>
+                                    <p class="mb-0">Jam Keluar </p>
                                     <p class="res-activity-time">
                                         <i class="fa fa-clock-o"></i>
                                         1.30 PM.
                                     </p>
                                 </li>
                                 <li>
-                                    <p class="mb-0">Pukulan Masuk di</p>
+                                    <p class="mb-0">Jam Masuk </p>
                                     <p class="res-activity-time">
                                         <i class="fa fa-clock-o"></i>
                                         2.00 PM.
                                     </p>
                                 </li>
                                 <li>
-                                    <p class="mb-0">Pukulan Keluar di</p>
+                                    <p class="mb-0">Jam Keluar </p>
                                     <p class="res-activity-time">
                                         <i class="fa fa-clock-o"></i>
                                         7.30 PM.
@@ -203,10 +203,10 @@
                         <table class="table table-striped custom-table datatable">
                             <thead>
                                 <tr>
-                                    <th>Tidak</th>
+                                    <th>No</th>
                                     <th>Tanggal </th>
-                                    <th>Pukulan Masuk</th>
-                                    <th>Pukulan Keluar</th>
+                                    <th>Jam Masuk</th>
+                                    <th>Jam Keluar</th>
                                     <th>Produksi</th>
                                     <th>Istirahat</th>
                                     <th>Lembur</th>

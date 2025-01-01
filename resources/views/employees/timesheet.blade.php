@@ -11,14 +11,14 @@
             <div class="page-header">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h3 class="page-title">Timesheet</h3>
+                        <h3 class="page-title">Lembar waktu</h3>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Timesheet</li>
+                            <li class="breadcrumb-item active">Lembar Waktu</li>
                         </ul>
                     </div>
                     <div class="col-auto float-right ml-auto">
-                        <a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_todaywork"><i class="fa fa-plus"></i> Add Today Work</a>
+                        <a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_todaywork"><i class="fa fa-plus"></i> Tambahkan Pekerjaan Hari Ini</a>
                     </div>
                 </div>
             </div>
@@ -30,12 +30,12 @@
                         <table class="table table-striped custom-table mb-0 datatable">
                             <thead>
                                 <tr>
-                                    <th>Employee</th>
-                                    <th>Date</th>
-                                    <th>Projects</th>
-                                    <th class="text-center">Assigned Hours</th>
-                                    <th class="text-center">Hours</th>
-                                    <th class="d-none d-sm-table-cell">Description</th>
+                                    <th>Karyawan</th>
+                                    <th>Tanggal</th>
+                                    <th>Proyek</th>
+                                    <th class="text-center">Jam yang Ditugaskan</th>
+                                    <th class="text-center">Jam</th>
+                                    <th class="d-none d-sm-table-cell">Deskripsi</th>
                                     <th class="text-right">Actions</th>
                                 </tr>
                             </thead>
@@ -49,7 +49,7 @@
                                     </td>
                                     <td>8 Mar 2019</td>
                                     <td>
-                                        <h2>Office Management</h2>
+                                        <h2>Manajemen Kantor</h2>
                                     </td>
                                     <td class="text-center">20</td>
                                     <td class="text-center">7</td>
@@ -341,7 +341,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Add Today Work details</h5>
+                        <h5 class="modal-title">Tambahkan detail Pekerjaan Hari Ini</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -350,12 +350,12 @@
                         <form>
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label>Project <span class="text-danger">*</span></label>
+                                    <label>Proyek <span class="text-danger">*</span></label>
                                     <select class="select">
-                                        <option>Office Management</option>
-                                        <option>Project Management</option>
-                                        <option>Video Calling App</option>
-                                        <option>Hospital Administration</option>
+                                        <option>Manajemen Kantor</option>
+                                        <option>Manajemen Proyek</option>
+                                        <option>Aplikasi Panggilan Video</option>
+                                        <option>Administrasi Rumah Sakit</option>
                                     </select>
                                 </div>
                             </div>
@@ -367,28 +367,28 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-4">
-                                    <label>Total Hours <span class="text-danger">*</span></label>
+                                    <label>Total Jam <span class="text-danger">*</span></label>
                                     <input class="form-control" type="text" value="100" readonly>
                                 </div>
                                 <div class="form-group col-sm-4">
-                                    <label>Remaining Hours <span class="text-danger">*</span></label>
+                                    <label>Sisa Jam <span class="text-danger">*</span></label>
                                     <input class="form-control" type="text" value="60" readonly>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label>Date <span class="text-danger">*</span></label>
+                                    <label>Tanggal <span class="text-danger">*</span></label>
                                     <div class="cal-icon">
                                         <input class="form-control datetimepicker" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <label>Hours <span class="text-danger">*</span></label>
+                                    <label>Jam <span class="text-danger">*</span></label>
                                     <input class="form-control" type="text">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Description <span class="text-danger">*</span></label>
+                                <label>Deskripsi <span class="text-danger">*</span></label>
                                 <textarea rows="4" class="form-control"></textarea>
                             </div>
                             <div class="submit-section">
@@ -406,7 +406,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Edit Work Details</h5>
+                        <h5 class="modal-title">Mengedit Detail Pekerjaan</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -415,45 +415,45 @@
                         <form>
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label>Project <span class="text-danger">*</span></label>
+                                    <label>Proyek <span class="text-danger">*</span></label>
                                     <select class="select">
-                                        <option>Office Management</option>
-                                        <option>Project Management</option>
-                                        <option>Video Calling App</option>
-                                        <option>Hospital Administration</option>
+                                        <option>Manajemen Kantor</option>
+                                        <option>Manajemen Proyek</option>
+                                        <option>Aplikasi Panggilan Video</option>
+                                        <option>Administrasi Rumah Sakit</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-sm-4">
-                                    <label>Deadline <span class="text-danger">*</span></label>
+                                    <label>Batas Waktu <span class="text-danger">*</span></label>
                                     <div class="cal-icon">
                                         <input class="form-control" type="text" value="5 May 2019" readonly>
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-4">
-                                    <label>Total Hours <span class="text-danger">*</span></label>
+                                    <label>Total Jam <span class="text-danger">*</span></label>
                                     <input class="form-control" type="text" value="100" readonly>
                                 </div>
                                 <div class="form-group col-sm-4">
-                                    <label>Remaining Hours <span class="text-danger">*</span></label>
+                                    <label>Sisa Jam <span class="text-danger">*</span></label>
                                     <input class="form-control" type="text" value="60" readonly>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label>Date <span class="text-danger">*</span></label>
+                                    <label>Tanggal <span class="text-danger">*</span></label>
                                     <div class="cal-icon">
                                         <input class="form-control datetimepicker" value="03/03/2019" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <label>Hours <span class="text-danger">*</span></label>
+                                    <label>Jam <span class="text-danger">*</span></label>
                                     <input class="form-control" type="text" value="9">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Description <span class="text-danger">*</span></label>
+                                <label>Keterangan <span class="text-danger">*</span></label>
                                 <textarea rows="4" class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel elit neque.</textarea>
                             </div>
                             <div class="submit-section">

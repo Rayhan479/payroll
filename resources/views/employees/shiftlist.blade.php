@@ -9,16 +9,16 @@
             <div class="page-header">
                 <div class="row">
                     <div class="col">
-                        <h3 class="page-title">Shift List</h3>
+                        <h3 class="page-title">Daftar Shift</h3>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Dashboard</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('all/employee/list') }}">Employees</a></li>
-                            <li class="breadcrumb-item active">Shift List</li>
+                            <li class="breadcrumb-item"><a href="{{ route('all/employee/list') }}">Karyawan</a></li>
+                            <li class="breadcrumb-item active">Daftar Shift</li>
                         </ul>
                     </div>
                     <div class="col-auto float-right ml-auto">
-                        <a href="#" class="btn add-btn m-r-5" data-toggle="modal" data-target="#add_shift">Add Shifts</a>
-                        <a href="#" class="btn add-btn m-r-5" data-toggle="modal" data-target="#add_schedule"> Assign Shifts</a>
+                        <a href="#" class="btn add-btn m-r-5" data-toggle="modal" data-target="#add_shift">Tambah Shift</a>
+                        <a href="#" class="btn add-btn m-r-5" data-toggle="modal" data-target="#add_schedule"> Menetapkan Shift</a>
                     </div>
                 </div>
             </div>
@@ -32,14 +32,14 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Shift Name</th>
-                                    <th>Min Start Time</th>
-                                    <th>Start Time</th>
-                                    <th>Max Start Time</th>
-                                    <th>Min End Time</th>
-                                    <th>End Time</th>
-                                    <th>Max End Time</th>
-                                    <th>Break Time</th>
+                                    <th>Nama Shift</th>
+                                    <th>Waktu Mulai Min</th>
+                                    <th>Waktu Mulai</th>
+                                    <th>Waktu Mulai Maks</th>
+                                    <th>Waktu Akhir Min</th>
+                                    <th>Waktu Akhir</th>
+                                    <th>Waktu Akhir Maks</th>
+                                    <th>Waktu Istirahat</th>
                                     <th class="text-center">Status</th>
                                     <th class="text-right no-sort">Action</th>
                                 </tr>
@@ -47,7 +47,7 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>10'o clock Shift</td>
+                                    <td>10'o Pergeseran jam</td>
                                     <td>09:00:00 am</td>
                                     <td>10:00:00 am</td>
                                     <td>10:30:00 am</td>

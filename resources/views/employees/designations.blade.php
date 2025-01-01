@@ -12,14 +12,14 @@
             <div class="page-header">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h3 class="page-title">Designations</h3>
+                        <h3 class="page-title">Penunjukan</h3>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Designations</li>
+                            <li class="breadcrumb-item active">Penunjukan</li>
                         </ul>
                     </div>
                     <div class="col-auto float-right ml-auto">
-                        <a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_designation"><i class="fa fa-plus"></i> Add Designation</a>
+                        <a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_designation"><i class="fa fa-plus"></i> Tambahkan Penunjukan</a>
                     </div>
                 </div>
             </div>
@@ -32,8 +32,8 @@
                             <thead>
                                 <tr>
                                     <th style="width: 30px;">#</th>
-                                    <th>Designation </th>
-                                    <th>Department </th>
+                                    <th>Penunjukan </th>
+                                    <th>Departemen </th>
                                     <th class="text-right">Action</th>
                                 </tr>
                             </thead>
@@ -261,7 +261,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Add Designation</h5>
+                        <h5 class="modal-title">Tambah Penunjukan</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -269,13 +269,13 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label>Designation Name <span class="text-danger">*</span></label>
+                                <label>Nama Penunjukan <span class="text-danger">*</span></label>
                                 <input class="form-control" type="text">
                             </div>
                             <div class="form-group">
-                                <label>Department <span class="text-danger">*</span></label>
+                                <label>Departemen <span class="text-danger">*</span></label>
                                 <select class="select">
-                                    <option>Select Department</option>
+                                    <option>Pilih Departemen</option>
                                     <option>Web Development</option>
                                     <option>IT Management</option>
                                     <option> 	Marketing</option>
@@ -296,7 +296,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Edit Designation</h5>
+                        <h5 class="modal-title">Edit Penunjukan</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -304,13 +304,13 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label>Designation Name <span class="text-danger">*</span></label>
+                                <label>Nama Penunjukan <span class="text-danger">*</span></label>
                                 <input class="form-control" value="Web Developer" type="text">
                             </div>
                             <div class="form-group">
-                                <label>Department <span class="text-danger">*</span></label>
+                                <label>Departemen <span class="text-danger">*</span></label>
                                 <select class="select">
-                                    <option>Select Department</option>
+                                    <option>Pilih Departemen</option>
                                     <option>Web Development</option>
                                     <option>IT Management</option>
                                     <option>Marketing</option>
@@ -332,8 +332,8 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="form-header">
-                            <h3>Delete Designation</h3>
-                            <p>Are you sure want to delete?</p>
+                            <h3>Delete Penunjukan</h3>
+                            <p>Apakah Anda yakin ingin menghapus?</p>
                         </div>
                         <div class="modal-btn delete-action">
                             <div class="row">

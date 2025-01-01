@@ -9,16 +9,16 @@
             <div class="page-header">
                 <div class="row">
                     <div class="col">
-                        <h3 class="page-title">Daily Scheduling</h3>
+                        <h3 class="page-title">Penjadwalan Harian</h3>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Dashboard</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('all/employee/list') }}">Employees</a></li>
-                            <li class="breadcrumb-item active">Shift Scheduling</li>
+                            <li class="breadcrumb-item"><a href="{{ route('all/employee/list') }}">Karyawan</a></li>
+                            <li class="breadcrumb-item active">Penjadwalan Shift</li>
                         </ul>
                     </div>
                     <div class="col-auto float-right ml-auto">
-                        <a href="{{ route('form/shiftlist/page') }}" class="btn add-btn m-r-5">Shifts</a>
-                        <a href="#" class="btn add-btn m-r-5" data-toggle="modal" data-target="#add_schedule"> Assign Shifts</a>
+                        <a href="{{ route('form/shiftlist/page') }}" class="btn add-btn m-r-5">Pergeseran</a>
+                        <a href="#" class="btn add-btn m-r-5" data-toggle="modal" data-target="#add_schedule"> Menetapkan Shift</a>
                     </div>
                 </div>
             </div>
@@ -31,20 +31,20 @@
                 <div class="col-sm-6 col-md-3">  
                     <div class="form-group form-focus">
                         <input type="text" class="form-control floating">
-                        <label class="focus-label">Employee</label>
+                        <label class="focus-label">Karyawan</label>
                     </div>
                 </div>
                 
                 <div class="col-sm-6 col-md-3"> 
                     <div class="form-group form-focus select-focus">
                         <select class="select floating"> 
-                            <option>All Department</option>
-                            <option value="1">Finance</option>
-                            <option value="2">Finance and Management</option>
-                            <option value="3">Hr & Finance</option>
+                            <option>Semua Departemen</option>
+                            <option value="1">Keuangan</option>
+                            <option value="2">Keuangan dan Manajemen</option>
+                            <option value="3">Sumber Daya Manusia & Keuangan</option>
                             <option value="4">ITech</option>
                         </select>
-                        <label class="focus-label">Department</label>
+                        <label class="focus-label">Departemen</label>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-2">  
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-2">  
-                    <a href="#" class="btn btn-success btn-block"> Search </a>  
+                    <a href="#" class="btn btn-success btn-block"> Pencarian </a>  
                 </div>     
             </div>
             <!-- Search Filter -->
@@ -75,7 +75,7 @@
                         <table class="table table-striped custom-table datatable">
                             <thead>
                                 <tr>
-                                    <th>Scheduled Shift</th>
+                                    <th>Shift Terjadwal</th>
                                     <th>Fri 21</th>
                                     <th>Sat 22</th>
                                     <th>Sun 23</th>
@@ -651,7 +651,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Add Schedule</h5>
+                        <h5 class="modal-title">Tambah Jadwal</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -661,22 +661,22 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="col-form-label">Department <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Departemen <span class="text-danger">*</span></label>
                                         <select class="select">
-                                            <option value="">Select</option>
-                                            <option value="">Development</option>
-                                            <option value="1">Finance</option>
-                                            <option value="2">Finance and Management</option>
-                                            <option value="3">Hr & Finance</option>
+                                            <option value="">Pilih</option>
+                                            <option value="">Pengembangan</option>
+                                            <option value="1">Keuangan</option>
+                                            <option value="2">Keuangan dan Manajemen</option>
+                                            <option value="3">Sumber Daya Manusia & Keuangan</option>
                                             <option value="4">ITech</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="col-form-label">Employee Name <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Nama Karyawan <span class="text-danger">*</span></label>
                                         <select class="select">
-                                            <option value="">Select </option>
+                                            <option value="">Pilih </option>
                                             <option value="1">Richard Miles </option>
                                             <option value="2">John Smith</option>
                                             <option value="3">Mike Litorus </option>
@@ -686,25 +686,25 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="col-form-label">Date</label>
+                                        <label class="col-form-label">Tanggal</label>
                                         <div class="cal-icon"><input class="form-control datetimepicker" type="text"></div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="col-form-label">Shifts <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Shift <span class="text-danger">*</span></label>
                                         <select class="select">
-                                            <option value="">Select </option>
+                                            <option value="">Pilih </option>
                                             <option value="1">10'o clock Shift</option>
                                             <option value="2">10:30 shift</option>
                                             <option value="3">Daily Shift </option>
-                                            <option value="4">New Shift</option>
+                                            <option value="4">Shift Baru</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="col-form-label">Min Start Time  <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Waktu Mulai Min  <span class="text-danger">*</span></label>
                                         <div class="input-group time timepicker">
                                             <input class="form-control"><span class="input-group-append input-group-addon"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></span>
                                         </div>
@@ -712,7 +712,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="col-form-label">Start Time  <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Waktu Mulai  <span class="text-danger">*</span></label>
                                         <div class="input-group time timepicker">
                                             <input class="form-control"><span class="input-group-append input-group-addon"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></span>
                                         </div>
@@ -720,7 +720,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="col-form-label">Max Start Time  <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Waktu Mulai Maks  <span class="text-danger">*</span></label>
                                         <div class="input-group time timepicker">
                                             <input class="form-control"><span class="input-group-append input-group-addon"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></span>
                                         </div>
@@ -728,7 +728,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="col-form-label">Min End Time  <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Waktu Akhir Min  <span class="text-danger">*</span></label>
                                         <div class="input-group time timepicker">
                                             <input class="form-control"><span class="input-group-append input-group-addon"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></span>
                                         </div>
@@ -736,7 +736,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="col-form-label">End Time   <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Waktu Akhir   <span class="text-danger">*</span></label>
                                         <div class="input-group time timepicker">
                                             <input class="form-control"><span class="input-group-append input-group-addon"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></span>
                                         </div>
@@ -744,7 +744,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="col-form-label">Max End Time <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Waktu Akhir Maks <span class="text-danger">*</span></label>
                                         <div class="input-group time timepicker">
                                             <input class="form-control"><span class="input-group-append input-group-addon"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></span>
                                         </div>
@@ -752,13 +752,13 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="col-form-label">Break Time  <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Waktu Istirahat  <span class="text-danger">*</span></label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label class="col-form-label">Accept Extra Hours </label>
+                                        <label class="col-form-label">Menerima Jam Tambahan </label>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
                                             <label class="custom-control-label" for="customSwitch1"></label>
@@ -791,7 +791,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Edit Schedule</h5>
+                        <h5 class="modal-title">Edit Jadwal</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -801,22 +801,22 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="col-form-label">Department <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Departemen <span class="text-danger">*</span></label>
                                         <select class="select">
-                                            <option value="">Select</option>
-                                            <option selected value="">Development</option>
-                                            <option value="1">Finance</option>
-                                            <option value="2">Finance and Management</option>
-                                            <option value="3">Hr & Finance</option>
+                                            <option value="">Pilih</option>
+                                            <option selected value="">Pengembangan</option>
+                                            <option value="1">Keuangan</option>
+                                            <option value="2">Keuangan dan Manajemen</option>
+                                            <option value="3">Sumber Daya Manusia & Keuangan</option>
                                             <option value="4">ITech</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="col-form-label">Employee Name <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Nama Karyawan <span class="text-danger">*</span></label>
                                         <select class="select">
-                                            <option value="">Select </option>
+                                            <option value="">Pilih </option>
                                             <option selected value="1">Richard Miles </option>
                                             <option value="2">John Smith</option>
                                             <option value="3">Mike Litorus </option>
@@ -826,19 +826,19 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="col-form-label">Date <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Tanggal <span class="text-danger">*</span></label>
                                         <div class="cal-icon"><input class="form-control datetimepicker" type="text"></div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="col-form-label">Shifts <span class="text-danger">*</span></label>
+                                        <label class="col-form-label">Shift <span class="text-danger">*</span></label>
                                         <select class="select">
-                                            <option value="">Select </option>
+                                            <option value="">Pilih </option>
                                             <option value="1">10'o clock Shift</option>
                                             <option value="2">10:30 shift</option>
                                             <option value="3">Daily Shift </option>
-                                            <option  selected value="4">New Shift</option>
+                                            <option  selected value="4">Shift Baru</option>
                                         </select>
                                     </div>
                                 </div>
@@ -892,7 +892,7 @@
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label class="col-form-label">Repeat Every</label>
+                                        <label class="col-form-label">Ulangi Setiap</label>
                                         <select class="select">
                                             <option value="">1 </option>
                                             <option value="1">2</option>
