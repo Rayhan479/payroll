@@ -6,11 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Log;
 use App\Models\User;
 use Carbon\Carbon;
-use Session;
-use Auth;
-use DB;
 
 class LoginController extends Controller
 {
@@ -54,7 +54,7 @@ class LoginController extends Controller
             flash()->error('Wrong Username or Password');
             return redirect('login');
         } catch (\Exception $e) {
-            \Log::info($e);
+            Log::info($e);
             flash()->error('Login failed. Please try again.');
             return redirect()->back();
         }
