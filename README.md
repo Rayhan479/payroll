@@ -1,2 +1,2 @@
-# TB Praktikum ADBO Kelompok 2
+# Web Grosir Menggunakan Laravel
 
